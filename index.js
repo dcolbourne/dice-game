@@ -15,9 +15,9 @@ function winTitle() {
     var twoWins = "Player 2 Wins!"
     
     if (document.querySelector(".img1").getAttribute("src")[13] > document.querySelector(".img2").getAttribute("src")[13]) {
-        document.querySelector("h1").innerText = "🚩 Player 1 Wins!";
+        document.querySelector("h1").innerText = "Player 1 Wins!";
     } else {
-        document.querySelector("h1").innerText = "Player 2 Wins! 🚩";
+        document.querySelector("h1").innerText = "Player 2 Wins!";
     }
 }
 
