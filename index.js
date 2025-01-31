@@ -10,12 +10,11 @@ function diceSelectRight() {
     document.querySelector(".img2").setAttribute("src", "./images/" + randomDice);
 }
 
-function winTitle() {
-    var oneWins = "Player 1 Wins!"
-    var twoWins = "Player 2 Wins!"
-    
-    if (document.querySelector(".img1").getAttribute("src")[13] > document.querySelector(".img2").getAttribute("src")[13]) {
-        document.querySelector("h1").innerText = "🚩 Player 1 Wins!";
+function winTitle() {    
+    if (document.querySelector(".img1").getAttribute("src")[13] === document.querySelector(".img2").getAttribute("src")[13]) {
+        document.querySelector("h1").innerText = "It's a tie!";
+    } else if (document.querySelector(".img1").getAttribute("src")[13] > document.querySelector(".img2").getAttribute("src")[13]) {
+        document.querySelector("h1").innerText = "🚩 Player 1 Wins!"; 
     } else {
         document.querySelector("h1").innerText = "Player 2 Wins! 🚩";
     }
